@@ -8,9 +8,6 @@ This is a clone of ["vite-react-router" (Github repo) by Erick Kuwahara](https:/
 - VS Code was complaining about it, so in `main.tsx` (which I renamed `main.jsx`) I removed `as HTMLElement` from:
   `ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(...`
 - I extracted the `nav` to its own component (`components/Nav.js`).
-- I got rid of the JavaScript in the `head` section of `index.html`.
-- I deleted `404.html` from the `public` folder.
-- I created a custom 404 page (`/src/pages/NotFoundPage.jsx`).
 
 ## Installation and configuring the Git Repo
 
