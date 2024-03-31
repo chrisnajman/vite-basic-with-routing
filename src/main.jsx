@@ -7,7 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import Home from "./pages/Home.jsx"
 import ProfilesPage from "./pages/ProfilesPage"
 import ProfilePage from "./pages/ProfilePage"
-// import NotFoundPage from "./pages/NotFoundPage"
+import NotFoundPage from "./pages/NotFoundPage"
 
 const router = createBrowserRouter([
   {
@@ -30,10 +30,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-  // {
-  //   path: "*",
-  //   element: <NotFoundPage />,
-  // },
+  {
+    path: "*",
+    element: <NotFoundPage />,
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById("root")).render(
