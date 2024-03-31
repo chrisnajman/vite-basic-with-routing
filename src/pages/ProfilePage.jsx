@@ -11,9 +11,9 @@ export default function ProfilePage() {
   return (
     <>
       {profileId > profiles.length || !isnum ? (
-        <h2>Profile Page {profileId} doesn&apos;t exist</h2>
+        <h2>Profile {profileId} doesn&apos;t exist</h2>
       ) : (
-        <h2>Profile Page {profileId}</h2>
+        <h2>Profile {profileId}</h2>
       )}
     </>
   )
