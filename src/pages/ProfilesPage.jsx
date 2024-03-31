@@ -1,0 +1,33 @@
+import { NavLink, Outlet } from "react-router-dom"
+
+export default function ProfilesPage() {
+  const profiles = [1, 2, 3, 4, 5]
+
+  return (
+    <>
+      <h2>Profiles Page</h2>
+
+      <div className="profiles">
+        <nav className="profiles-links">
+          {profiles.length
+            ? profiles.map((profile) => (
+                <NavLink
+                  to={`/vite-basic-with-routing/profiles/${profile}`}
+                  key={profile}
+                  className={({ isActive }) => {
+                    return isActive ? "nav-active" : ""
+                  }}
+                >
+                  Profile {profile}
+                </NavLink>
+              ))
+            : "No profiles exist"}
+        </nav>
+
+        <div className="profile">
+          <Outlet />
+        </div>
+      </div>
+    </>
+  )
+}
